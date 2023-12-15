@@ -7,7 +7,32 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    
+    <form action="#" onsubmit="calcTip(); return false">
+        <h1>Tringeldrechner</h1>
+        <label for="amount">Wie hoch war die Rechnung?</label>
+        <div class="div__income">
+            <picture id="picture_cash"></picture>
+            <input type="number" name="amount" id="amount" required>
+        </div>
+        <div class="div__income">
+            <picture id="picture_people"></picture>
+            <input type="number" name="amount" id="people" required>
+        </div>
+        <select name="options" id="options">
+            <option value="okay">Okay</option>
+            <option value="super">Super</option>
+            <option value="great">Great</option>
+            <option value="not_so_bad">Bad</option>
+            <option value="bad">Hyper Ultra Super Bad</option>
+        </select>
+        <button type="submit">Berechne</button>
+        <div id="div_output" style="visibility:hidden;">
+            <p>Das Tringeld beträgt: <span id="tip"></span> €</p>
+            <p>Die Gesamtsumme beträgt: <span id="endSum"></span> €</p>
+            <p>Der Preis pro Person beträgt ist: <span id="perPerson"></span> €</p>
+        </div>
+
+    </form>
 
     <script src="./assets/js/main.js"></script>
 </body>
