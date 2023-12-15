@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: "";
+}
+body form {
+  background-color: pink;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: "";
+  gap: 1rem;
+}
+body form .div__income {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: none;
+  align-self: none;
+  width: 100%;
+  gap: 0.25rem;
+}
+body form .div__income #picture_cash, body form .div__income #picture_people {
+  background-color: rgb(44, 5, 245);
+  height: 100%;
+  flex-grow: 2;
+}
+body form .div__income #amount, body form .div__income #people {
+  flex-grow: 4;
+}
+body form #options {
+  width: 100%;
+}
+body form button {
+  width: 100%;
+  background-color: red;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0;
+}
+body form #div_output {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: "";
+  gap: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,52 @@
+@use 'mixins' as mix;
+@use 'variables' as var;
+
+* {
+    @include mix.generalSettings;
+}
+
+body {
+    height: 100vh;
+    @include mix.displaySettings(flex, column, center, center, "");
+    
+    form {
+        background-color: var.$color-pink;
+        padding: var.$padding-general;
+        border-radius: 1rem;
+
+        @include mix.displaySettings(flex, column, center, flex-start, "");
+        gap: 1rem;
+
+        .div__income {
+            @include mix.displaySettings(flex, row, center, none, none);
+            width: 100%;
+            gap: .25rem;
+
+            #picture_cash, #picture_people {
+                background-color: var.$color-blue;
+                height: 100%;
+                flex-grow: 2;
+            }
+            #amount, #people {
+                flex-grow: 4;
+            }
+        }
+
+        #options {
+            width: 100%;
+        }
+
+        button {
+            width: 100%;
+            background-color: var.$color-red;
+            border: none;
+            border-radius: .5rem;
+            padding: .5rem 0;
+        }
+
+        #div_output {
+            @include mix.displaySettings(flex, column, center, flex-start, "");
+        gap: 1rem;
+        }
+    }
+}

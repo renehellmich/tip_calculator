@@ -48,7 +48,7 @@ const tipCalculator = () => {
     endSumOutput.innerHTML = sum;
     perPersonOutput.innerHTML = perGuest.toFixed(2);
 
-    document.getElementById("div_output").style.visibility = "visible";
+    document.getElementById("div_output").style = "block";
 }
 
 function calcTip() {
