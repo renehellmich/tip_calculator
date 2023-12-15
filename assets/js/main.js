@@ -41,12 +41,12 @@ const tipCalculator = () => {
     }
 
     tip = Number(amount) * perc / 100;
-    sum = Number(amount) + tip;
+    sum = Number(amount) + Number(tip.toFixed(2));
     perGuest = sum / people;
 
     tipOutput.innerHTML = tip;
     endSumOutput.innerHTML = sum;
-    perPersonOutput.innerHTML = perGuest;
+    perPersonOutput.innerHTML = perGuest.toFixed(2);
 
     document.getElementById("div_output").style.visibility = "visible";
 }
